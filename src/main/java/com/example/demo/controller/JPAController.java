@@ -19,7 +19,7 @@ public class JPAController {
     @Autowired
     ResultRepository resultrepository;
 
-    @RequestMapping(method=RequestMethod.POST,name="jpaservice")
+    @RequestMapping(method=RequestMethod.POST,value="jpaservice")
     public Iterable<Result> inputservice(@RequestBody Result result) {
        
     	result.setTest1(/*result.getVar1()+result.getVar2()+result.getVar3()+","+
